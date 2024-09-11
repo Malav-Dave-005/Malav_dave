@@ -1,0 +1,608 @@
+<!-- Title:Travel Website.
+Enrollment no:22002171510009.
+Date:01-04-2024
+Sub:Full Stack Development -->
+<!--doctype html-->
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--==Title============================================================-->
+        <title>Travel Website</title>
+
+        <!--==Stylesheet=======================================================-->
+        <link rel="stylesheet" type="text/css" href="D:\SEM-3\FSD\PROJECT\style.css"/>
+
+        <!--==Fav-icon=========================================================-->
+        <link rel="shortcut icon" href="images/favourite-image.jpeg"/>
+
+        <!--==Using-Font-Awesome-for-Icons=====================================-->
+        <link rel="styleSheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+        <!--==Import-Poppins-Font-Family-From-Google-Font======================-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+                
+        <!-- Link Swiper's CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+
+    </head>
+
+    <body>
+
+        <!--==Navigation=============================-->
+        <nav class="navigation">
+
+            <!--logo-->
+            <a href="index.html" class="logo"><i class="fa-brands fa-phoenix-framework"></i>Travel</a>
+            
+            <!--menu-btn-->
+            <input type="checkbox" class="menu-btn" id="menu-btn">
+            <label for="menu-btn" class="menu-icon">
+                <span class="nav-icon"></span>
+            </label>
+
+            <!--menu-->
+            <ul class="menu">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="#trending">Trending</a></li>
+                <li><a href="#destination">Destination</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+            </ul>
+
+            <!--book-now-btn-->
+            <a href="#" class="book-now-btn" onclick="Book_Now()">Book Now</a>
+
+        </nav>
+        <!--nav-end-->
+
+    
+    
+        <!--==main==============================-->
+        <section id="main">
+            <div class="main-content">
+                <!--text-->
+                <div class="main-text">
+                    <strong>Explore The World <i class="fa-solid fa-globe"></i></strong>
+                    <h1>It's a Big World Out There, Go Explore</h1>
+                    <a href="#">Book Online</a>
+                </div>
+                <!--img-->
+                <div class="main-img">
+                    <img src="images/main2.png" alt="Traveling">
+                </div>
+            </div>
+
+
+
+            <!--==Search-Tour=====================-->
+            <div class="search-tour">
+                <form>
+                    <!--Location-->
+                    <div class="t-search-box">
+                        <div class="s-b-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="s-b-input">
+                            <span>Location <i class="fas fa-chevron-down"></i></span>
+                            <input type="text" name="location" placeholder="KEDARNATH,INDIA" required/>
+                        </div>
+                    </div>
+                    <!--Date-->
+                    <div class="t-search-box">
+                        <div class="s-b-icon">
+                            <i class="far fa-calendar-alt"></i>
+                        </div>
+                        <div class="s-b-input">
+                            <span>Tour Date <i class="fas fa-chevron-down"></i></span>
+                            <input type="date" id="tourdate" name="tourdate" required/>
+                        </div>
+                    </div>
+                    <!--Guest-->
+                    <div class="t-search-box">
+                        <div class="s-b-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <div class="s-b-input">
+                            <span>Persons <i class="fas fa-chevron-down"></i></span>
+                            <input type="number" name="total-tourist" placeholder="no of Tourist" required/>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <!--main-end-->
+
+
+        <!--==Trending===========================-->
+        <section id="trending">
+            
+                <!--heading-->
+                <div class="trending-heading">
+                    <h2>Trending 2024</h2>
+                    <p>Sost Brilliant reasons Entrada should be your one-stop-stop!</p>
+                </div>
+
+            <!--==trend-box-container==============-->
+            <div class="trending-box-container">
+
+            <!-- Swiper -->
+            <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <!--**Slide-1*******************-->
+                <div class="swiper-slide">
+
+                    <!--box**********-->
+                <div class="trending-box">
+                    <!--img-->
+                    <div class="t-b-img">
+                        <img src="images/t-1.jpeg" alt="Trending-1">
+                    </div>
+                    <!--text-->
+                    <div class="t-b-text">
+                        <a href="#">ADVENTURE Wild Life</a>
+                        <span>12 Places | 3 Activites</span>
+                    </div>
+                    <!--price-&-Book-->
+                    <div class="price-book">
+                        <span class="t-price">30,000</span>
+                        <a href="#" class="t-book-btn" onclick="Book_Now()">Book Now</a>
+                    </div>
+                    <!--agency-name-->
+                    <div class="agency-name">
+                        <img src="images/Agency_name.jpeg"  alt="Agency Logo">
+                        <span>Agency Name</span>
+                    </div>
+                </div>
+                </div>
+
+                <!--**Slide-2*******************-->
+                <div class="swiper-slide">
+
+                    <!--box**********-->
+            <div class="trending-box">
+                <!--img-->
+                <div class="t-b-img">
+                    <img src="images/t-2.jpeg" alt="Trending-1">
+                </div>
+                <!--text-->
+                <div class="t-b-text">
+                    <a href="#">ADVENTURE Wild Life</a>
+                    <span>12 Places | 3 Activites</span>
+                </div>
+                <!--price-&-Book-->
+                <div class="price-book">
+                    <span class="t-price">30,000</span>
+                    <a href="#" class="t-book-btn" onclick="Book_Now()">Book Now</a>
+                </div>
+                <!--agency-name-->
+                <div class="agency-name">
+                    <img src="images/Agency_name.jpeg"  alt="Agency Logo">
+                    <span>Agency Name</span>
+                </div>
+            </div>
+            </div>
+
+                <!--**Slide-3*******************-->
+                <div class="swiper-slide">
+
+                    <!--box**********-->
+            <div class="trending-box">
+                <!--img-->
+                <div class="t-b-img">
+                    <img src="images/t-3.jpg" alt="Trending-1">
+                </div>
+                <!--text-->
+                <div class="t-b-text">
+                    <a href="#">ADVENTURE Wild Life</a>
+                    <span>12 Places | 3 Activites</span>
+                </div>
+                <!--price-&-Book-->
+                <div class="price-book">
+                    <span class="t-price">30,000</span>
+                    <a href="#" class="t-book-btn" onclick="Book_Now()">Book Now</a>
+                </div>
+                <!--agency-name-->
+                <div class="agency-name">
+                    <img src="images/Agency_name.jpeg"  alt="Agency Logo">
+                    <span>Agency Name</span>
+                </div>
+            </div>
+            </div>
+
+                    <!--**Slide-4*******************-->
+                    <div class="swiper-slide">
+
+                        <!--box**********-->
+                <div class="trending-box">
+                    <!--img-->
+                    <div class="t-b-img">
+                        <img src="images/t-4.jpeg" alt="Trending-1">
+                    </div>
+                    <!--text-->
+                    <div class="t-b-text">
+                        <a href="#">ADVENTURE Wild Life</a>
+                        <span>12 Places | 3 Activites</span>
+                    </div>
+                    <!--price-&-Book-->
+                    <div class="price-book">
+                        <span class="t-price">30,000</span>
+                        <a href="#" class="t-book-btn" onclick="Book_Now()">Book Now</a>
+                    </div>
+                    <!--agency-name-->
+                    <div class="agency-name">
+                        <img src="images/Agency_name.jpeg"  alt="Agency Logo">
+                        <span>Agency Name</span>
+                    </div>
+                </div>
+                </div>
+
+                <!--**Slide-5*******************-->
+                <div class="swiper-slide">
+
+                    <!--box**********-->
+                <div class="trending-box">
+                <!--img-->
+                <div class="t-b-img">
+                    <img src="images/t-5.jpeg" alt="Trending-1">
+                </div>
+                <!--text-->
+                <div class="t-b-text">
+                    <a href="#">ADVENTURE Wild Life</a>
+                    <span>12 Places | 3 Activites</span>
+                </div>
+                <!--price-&-Book-->
+                <div class="price-book">
+                    <span class="t-price">30,000</span>
+                    <a href="#" class="t-book-btn" onclick="Book_Now()">Book Now</a>
+                </div>
+                <!--agency-name-->
+                <div class="agency-name">
+                    <img src="images/Agency_name.jpeg"  alt="Agency Logo">
+                    <span>Agency Name</span>
+                </div>
+                </div>
+                </div>
+            </div>
+                <div class="swiper-pagination"></div>
+            </div>
+            </div>
+        </section>
+
+
+    <!--==Destination===========================-->
+    <section id="destination">
+
+            <!--heading******************-->
+            <div class="destination-heading">
+                <h2>TOP Destinations</h2>
+            </div>
+
+            <!--destination-grid*********-->
+            <div class="destination-grid">
+
+                <!--box-1=======-->
+                <div class="destination-box d-b-1">
+                    <img src="images/d-1.jpeg" alt="Destination"/>
+                    <!--text-->
+                    <div class="d-b-text-container">
+                        <span class="feedback">3.5</span>
+                        <div class="d-b-text">
+                            <strong>SOMNATH MAHADEV</strong>
+                            <span>TEMPLE & SEA SHORE POINT</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!--box-2=======-->
+                <div class="destination-box d-b-2">
+                    <img src="images/d-7.jpg" alt="Destination"/>
+                    <!--text-->
+                    <div class="d-b-text-container">
+                        <span class="feedback">3.5</span>
+                        <div class="d-b-text">
+                            <strong>GIRNAR</strong>
+                            <span>MOUNTAIN</span>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!--box-3=======-->
+                <div class="destination-box d-b-3">
+                    <img src="images/d-8.jpg" alt="Destination"/>
+                    <!--text-->
+                    <div class="d-b-text-container">
+                        <span class="feedback">3.5</span>
+                        <div class="d-b-text">
+                            <strong>KASTBHANJAN DEV</strong>
+                            <span>TEMPLE-JAY BAJARANG BALI</span>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!--box-4=======-->
+                <div class="destination-box d-b-4">
+                    <img src="images/d-4.jpg" alt="Destination"/>
+                    <!--text-->
+                    <div class="d-b-text-container">
+                        <span class="feedback">3.5</span>
+                        <div class="d-b-text">
+                            <strong>DWARKADHISH</strong>
+                            <span>TEMPLE & SEA SHORE POINT</span>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!--box-5=======-->
+                <div class="destination-box d-b-5">
+                    <img src="images/d-9.jpeg" alt="Destination"/>
+                    <!--text-->
+                    <div class="d-b-text-container">
+                        <span class="feedback">3.5</span>
+                        <div class="d-b-text">
+                            <strong>POLO Forest</strong>
+                            <span>ADVENTURE POINT</span>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!--box-6=======-->
+                <div class="destination-box d-b-6">
+                    <img src="images/d-10.jpeg" alt="Destination"/>
+                    <!--text-->
+                    <div class="d-b-text-container">
+                        <span class="feedback">3.5</span>
+                        <div class="d-b-text">
+                            <strong>GIR FOREST</strong>
+                            <span>LIONS</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+    </section>
+
+    <!--==Testimonials========================-->
+    <section id="testimonials">
+
+        <!--**Img******************************-->
+        <div class="testmonials-img">
+            <img src="images/testimonials-img.png" alt="Tour"/>
+        </div>
+
+        <!--**Slider***************************-->
+        <div class="testmonials-slider">
+
+
+            <!-- Swiper -->
+            <div class="swiper mySwipertest">
+            <div class="swiper-wrapper">
+
+                <!--slide-1-->
+                <div class="swiper-slide">
+                    <!--==box============-->
+                    <div class="testimonials-box">
+                    <!--text-->
+                    <div class="testimonials-box-text">
+                        <i class="fas fa-quote-left"></i>
+                        <p>very good journey experience</p>
+                        <strong>Tirth Joshi</strong>
+                    </div>
+                    <!--img-->
+                    <div class="testimonials-box-img">
+                        <img src="images/t-member.jpeg" alt="Testimonials">
+                    </div>
+                    </div>
+                </div><!--slide-end-->   
+
+                <!--slide-2-->
+                <div class="swiper-slide">
+                    <!--==box============-->
+                    <div class="testimonials-box">
+                    <!--text-->
+                    <div class="testimonials-box-text">
+                        <i class="fas fa-quote-left"></i>
+                        <p>Bus was not so clean i prefer to choose other Traveller.</p>
+                        <strong>Himanshu Tiwari</strong>
+                    </div>
+                    <!--img-->
+                    <div class="testimonials-box-img">
+                        <img src="images/t-member.jpeg" alt="Testimonials">
+                    </div>
+                    </div>
+                </div><!--slide-end--> 
+
+                <!--slide-3-->
+                <div class="swiper-slide">
+                    <!--==box============-->
+                    <div class="testimonials-box">
+                    <!--text-->
+                    <div class="testimonials-box-text">
+                        <i class="fas fa-quote-left"></i>
+                        <p>Safe Journey and staff approach is also very good</p>
+                        <strong>Abhishek jotangiya</strong>
+                    </div>
+                    <!--img-->
+                    <div class="testimonials-box-img">
+                        <img src="images/t-member.jpeg" alt="Testimonials">
+                    </div>
+                    </div>
+                </div><!--slide-end--> 
+
+                <!--slide-4-->
+                <div class="swiper-slide">
+                    <!--==box============-->
+                    <div class="testimonials-box">
+                    <!--text-->
+                    <div class="testimonials-box-text">
+                        <i class="fas fa-quote-left"></i>
+                        <p>Very good Journey</p>
+                        <strong>Kartik gajjar</strong>
+                    </div>
+                    <!--img-->
+                    <div class="testimonials-box-img">
+                        <img src="images/t-member.jpeg" alt="Testimonials">
+                    </div>
+                    </div>
+                </div><!--slide-end--> 
+            </div>
+            <div class="swiper-pagination"></div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!--==Subscribe===========================-->
+    <section id="subscribe">
+        <strong>Subscribe Our NewsLetter</strong>
+        <p>Reacive Latest News, Updates, and other things every weak.</p>
+        <form>
+            <input type="email" name="subscribe" placeholder="Enter Your Email Address" required/>
+            <button><i class="fas fa-paper-plane"></i></button>
+        </form>
+    </section>
+
+
+
+
+    <!--==footer===============================-->
+    <footer>
+        <!--container**********************-->
+        <div class="footer-container">
+
+            <!--footer-box********************-->
+            <div class="footer-box">
+                <strong><i class="fab fa-phoenix-framework"></i> Travel</strong>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias fuga</p>
+                <!--social-media****************-->
+                <div class="footer-social">
+                    <a href="#">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!--footer-box***********************-->
+            <div class="footer-box">
+                <strong>Links</strong>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Destinations</a></li>
+                    <li><a href="#">Trending</a></li>
+                    <li><a href="#">Book Online</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+
+
+            <!--footer-box***********************-->
+            <div class="footer-box">
+                <strong>Social</strong>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Destinations</a></li>
+                    <li><a href="#">Trending</a></li>
+                    <li><a href="#">Book Online</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+
+
+            <!--footer-box***********************-->
+            <div class="footer-box">
+                <strong>External</strong>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Destinations</a></li>
+                    <li><a href="#">Trending</a></li>
+                    <li><a href="#">Book Online</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+
+            <!--**Footer-box*******************-->
+            <div class="footer-box">
+                <strong>Contact</strong>
+                <span><i class="fas fa-map-marker-alt"></i> Gandhinagar,Gujarat,India </span>
+                <span><i class="far fa-envelope"></i> <a href="#">Example@gmail.com</a></span>
+                <span><i class="fas fa-phone-square-alt"></i><a href="#">0123456789</a></span>
+            </div>
+
+        </div>
+    </footer>
+    <span class="copyright">Going To Internet 2023-All Copyright Reserved</span>
+
+
+
+
+     <!-- Swiper JS -->
+     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+     <!-- Initialize Swiper -->
+     <script>
+
+        function Book_Now() {
+            var name = prompt("Enter your name:");
+            var date= prompt("Enter Date")
+            var email = prompt("Enter your email:");
+            var numberOfTickets = prompt("Enter number of tickets:");
+            
+            // Validate input
+            if (name && email && numberOfTickets && !isNaN(numberOfTickets)) {
+            alert("Thank you, " + name + "! Your booking for " + numberOfTickets + " tickets on "+ date+"is confirmed. We will contact you via email at " + email + ".");
+            } else {
+            alert("Invalid input. Please make sure to provide valid information.");
+            }
+        }
+
+       var swiper = new Swiper(".mySwiper", {
+         slidesPerView: 1,
+         spaceBetween: 10,
+         pagination: {
+           el: ".swiper-pagination",
+           clickable: true,
+         },
+         breakpoints: {
+           640: {
+             slidesPerView: 2,
+             spaceBetween: 20,
+           },
+           768: {
+             slidesPerView: 4,
+             spaceBetween: 40,
+           },
+           1024: {
+             slidesPerView: 3,
+             spaceBetween: 20,
+           },
+         },
+       });
+
+       /*testimonials*/
+       var swiper = new Swiper(".mySwipertest", {
+        pagination: {
+        el: ".swiper-pagination",
+      },
+    });
+     </script>
+</body>
+
+</html>
